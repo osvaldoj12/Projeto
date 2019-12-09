@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Ouvidoria{% endblock %}
+
+{% block content %}
+    <center>
+    <nav class="navbar navbar-dark bg-dark m-1 ml-5 px-md-5 text-white container" style="border-radius: 20px 0px;" id="navbar">
+        <h6>Seja Bem Vindo(a) há Ouvidoria</h6>
+    </nav>
+    <br>
+    <div class="services-section">
+        <div class="services-container">
+
+          <div class="service-box">
+                <a href="/Sugestoes" id="DecorationHome">
+                <div class="service-icon">
+                    <i class="fas fa-comment"></i>
+                </div>
+                <div class="service-title">Sugestões</div>
+                </a>
+            </div>  
+
+          <div class="service-box">
+                <a href="/Reclamacoes" id="DecorationHome">
+                <div class="service-icon">
+                    <i class="fas fa-thumbs-down"></i>
+                </div>
+                <div class="service-title">Reclamações</div>
+                </a>
+            </div>  
+
+          <div class="service-box">
+                <a href="/Elogios" id="DecorationHome">
+                <div class="service-icon" id="iconBorder">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="service-title">Elogios</div>
+                </a>
+            </div>  
+
+          <div class="service-box">
+                <a href="/Denuncias" id="DecorationHome">
+                <div class="service-icon">
+                    <i class="fas fa-exclamation"></i>
+                </div>
+                <div class="service-title">Denuncias</div>
+                </a>
+            </div>  
+          </div>
+        </div>
+
+{% endblock %}
+

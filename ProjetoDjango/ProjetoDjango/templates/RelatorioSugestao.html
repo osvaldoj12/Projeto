@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Relatorio de Sugestao{% endblock %}
+
+{% block content %}
+    <ul>
+    {% for sugestoes in Sugestoes %}
+        <li> {{ sugestoes }}</li> 
+    {% empty %}
+        <li>Não foi encontrado Sugestões</li>
+    {% endfor %}
+    </ul>        
+
+{% endblock content %}

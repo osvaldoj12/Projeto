@@ -1,0 +1,107 @@
+/*De Login */
+.form-group{
+    padding: 50px;
+    margin: 10px;
+}
+.form-control[type="text"],.form-control[type="email"],.form-control[type="password"],.form-control[type="tel"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 14px 10px;
+    width: 70%;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+}
+.form-control[type="text"]:focus,.form-control[type="email"]:focus,.form-control[type="password"]:focus,.form-control[type="tel"]:focus{
+    transition: 1.0s;
+    width: 60%;
+    border-color: #2ecc71;
+}
+
+.input-group{
+    width: 30%;
+    border-radius: 20px;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form-control{
+    background: transparent;
+}
+#navbar{
+    width: 27%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(100deg, #EE7752, #E73C7E,#23A6D5,#23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 20s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+@media screen and (max-width:960px){
+    .service-box{
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .service-box{
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .service-box{
+        max-width: 100%;
+    }
+}
+#btn[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+#btn[type = "submit"]:hover{
+    background: #2ecc71;
+}
+/* Sugestao */
+#navbar{
+    width: 30%;
+}
+#formGroupExampleInput{
+    color: white;
+}
+#formGroupExampleInput::placeholder{
+    color: white;
+}
+#formGroupExampleInput:focus{
+    background-color: transparent;
+}
+#formGroupExampleInput:focus::placeholder{
+    color: transparent;
+}
